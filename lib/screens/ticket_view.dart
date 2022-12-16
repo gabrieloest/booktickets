@@ -2,8 +2,6 @@ import 'package:booktickets/utils/app_layout.dart';
 import 'package:booktickets/utils/app_styles.dart';
 import 'package:booktickets/widgets/thick_container.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:gap/gap.dart';
 
 class TicketView extends StatelessWidget {
@@ -37,7 +35,7 @@ class TicketView extends StatelessWidget {
                             Styles.headLineStyle3.copyWith(color: Colors.white),
                       ),
                       const Spacer(),
-                      ThickContainer(),
+                      const ThickContainer(),
                       Expanded(
                           child: Stack(children: [
                         SizedBox(
@@ -52,7 +50,7 @@ class TicketView extends StatelessWidget {
                                 mainAxisSize: MainAxisSize.max,
                                 children: List.generate(
                                     (constraints.constrainWidth() / 6).floor(),
-                                    (index) => SizedBox(
+                                    (index) => const SizedBox(
                                           width: 3,
                                           height: 1,
                                           child: DecoratedBox(
@@ -67,14 +65,14 @@ class TicketView extends StatelessWidget {
                         Center(
                           child: Transform.rotate(
                             angle: 1.5,
-                            child: Icon(
+                            child: const Icon(
                               Icons.local_airport_rounded,
                               color: Colors.white,
                             ),
                           ),
                         ),
                       ])),
-                      ThickContainer(),
+                      const ThickContainer(),
                       const Spacer(),
                       Text(
                         "LDN",
