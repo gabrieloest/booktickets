@@ -227,7 +227,8 @@ class TicketView extends StatelessWidget {
                     )
                   ],
                 ),
-              )
+              ),
+              //
             ],
           )),
     );
